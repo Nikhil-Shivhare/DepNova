@@ -1,0 +1,17 @@
+{
+  "name": "demo-webapp",
+  "version": "1.0.0",
+  "description": "A demo web application for DepNova testing",
+  "dependencies": {
+    "express": "^4.18.2",
+    "lodash": "4.17.21",
+    "axios": "^1.6.7",
+    "mongoose": "^8.1.1",
+    "jsonwebtoken": "^9.0.2",
+    "bcryptjs": "2.4.3"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nodemon": "^3.0.3"
+  }
+}

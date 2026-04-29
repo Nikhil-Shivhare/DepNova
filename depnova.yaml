@@ -1,0 +1,32 @@
+# DepNova config — scanning our demo multi-language app
+project:
+  name: "demo-webapp"
+  root_path: "./demo-app"
+  output_dir: "./demo-app/depnova-reports"
+
+settings:
+  log_level: "INFO"
+  fail_on_error: false
+
+pipeline:
+  # Phase 1: Find all declared dependencies
+  - plugin: "lockfile_scanner"
+    enabled: true
+    config:
+      ecosystems:
+        npm: true
+        poetry: true
+        pipenv: true
+
+  - plugin: "manifest_scanner"
+    enabled: true
+    config:
+      files: ["requirements.txt", "package.json", "pom.xml"]
+      mark_unpinned: true
+
+  # Phase 2: Scan OS packages on this machine
+  - plugin: "os_package_scanner"
+    enabled: true
+    config:
+      auto_detect: true
+      package_managers: ["dpkg"]
