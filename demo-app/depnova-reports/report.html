@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DepNova Report — accops-employee-portal</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', -apple-system, sans-serif; background: #0f172a; color: #e2e8f0; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+        h1 { font-size: 1.8rem; margin-bottom: 5px; color: #f8fafc; }
+        .subtitle { color: #94a3b8; margin-bottom: 25px; }
+        .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-bottom: 25px; }
+        .card { background: #1e293b; border-radius: 12px; padding: 20px; border: 1px solid #334155; }
+        .card .value { font-size: 2rem; font-weight: 700; color: #38bdf8; }
+        .card .label { font-size: 0.85rem; color: #94a3b8; margin-top: 4px; }
+        .card.danger .value { color: #f87171; }
+        .card.warning .value { color: #fbbf24; }
+        .card.success .value { color: #4ade80; }
+        table { width: 100%; border-collapse: collapse; background: #1e293b; border-radius: 12px; overflow: hidden; margin-bottom: 25px; }
+        th { background: #334155; padding: 12px 15px; text-align: left; font-size: 0.85rem; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.05em; }
+        td { padding: 10px 15px; border-top: 1px solid #334155; font-size: 0.9rem; }
+        tr:hover { background: #273548; }
+        .badge { padding: 3px 8px; border-radius: 6px; font-size: 0.75rem; font-weight: 600; }
+        .sev-critical { background: #991b1b; color: #fecaca; }
+        .sev-high { background: #92400e; color: #fde68a; }
+        .sev-medium { background: #854d0e; color: #fef08a; }
+        .sev-low { background: #1e3a5f; color: #93c5fd; }
+        .eco-npm, .eco-cdn, .eco-static { background: #164e63; color: #67e8f9; }
+        .eco-pypi { background: #1e3a5f; color: #93c5fd; }
+        .eco-maven { background: #3b0764; color: #d8b4fe; }
+        .eco-deb { background: #14532d; color: #86efac; }
+        .conf { padding: 2px 6px; border-radius: 4px; font-size: 0.8rem; font-weight: 600; }
+        .conf-high { color: #4ade80; }
+        .conf-med { color: #fbbf24; }
+        .conf-low { color: #f87171; }
+        .no-ver { color: #f87171; font-style: italic; }
+        .sources { font-size: 0.8rem; color: #94a3b8; }
+        .purl { font-size: 0.75rem; color: #64748b; font-family: monospace; }
+        h2 { margin: 20px 0 15px; color: #f8fafc; }
+        .section { margin-bottom: 30px; }
+        .vuln-critical td { border-left: 3px solid #ef4444; }
+        .vuln-high td { border-left: 3px solid #f59e0b; }
+        .vuln-medium td { border-left: 3px solid #eab308; }
+        a { color: #38bdf8; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .footer { text-align: center; padding: 20px; color: #64748b; font-size: 0.8rem; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🛡️ DepNova Security Report</h1>
+        <p class="subtitle">accops-employee-portal — Generated 2026-04-29 17:53 UTC</p>
+
+        <div class="cards">
+            <div class="card">
+                <div class="value">14</div>
+                <div class="label">Total Dependencies</div>
+            </div>
+            <div class="card">
+                <div class="value">2</div>
+                <div class="label">Ecosystems</div>
+            </div>
+            <div class="card danger">
+                <div class="value">5</div>
+                <div class="label">Vulnerabilities</div>
+            </div>
+            <div class="card danger">
+                <div class="value">3</div>
+                <div class="label">Critical + High</div>
+            </div>
+        </div>
+
+        <div class='section'><h2>🚨 Vulnerabilities</h2><table><thead><tr><th>CVE ID</th><th>Severity</th><th>Package</th><th>Summary</th></tr></thead><tbody>
+            <tr class="vuln-high">
+                <td><a href="https://github.com/moment/moment/security/advisories/GHSA-8hfj-j24r-96c4" target="_blank">CVE-2022-24785</a></td>
+                <td><span class="badge sev-high">HIGH</span></td>
+                <td>pkg:npm/moment@2.29.1</td>
+                <td>This vulnerability impacts npm (server) users of moment.js, especially if user provided locale string, eg fr is directly</td>
+            </tr>
+            <tr class="vuln-high">
+                <td><a href="https://github.com/moment/moment/security/advisories/GHSA-wc69-rhjr-hc9g" target="_blank">CVE-2022-31129</a></td>
+                <td><span class="badge sev-high">HIGH</span></td>
+                <td>pkg:npm/moment@2.29.1</td>
+                <td>Regular Expression Denial of Service (ReDoS), Affecting moment package, versions >=2.18.0 <2.29.4</td>
+            </tr>
+            <tr class="vuln-high">
+                <td><a href="https://github.com/jashkenas/underscore/security/advisories/GHSA-qpx9-hpmf-5gmw" target="_blank">CVE-2026-27601</a></td>
+                <td><span class="badge sev-high">HIGH</span></td>
+                <td>pkg:npm/underscore@1.13.6</td>
+                <td>### Impact
+
+In simple words, some programs that use `_.flatten` or `_.isEqual` could be made to crash. Someone who wants</td>
+            </tr>
+            <tr class="vuln-medium">
+                <td><a href="https://blog.jquery.com/2020/04/10/jquery-3-5-0-released/" target="_blank">CVE-2020-11023</a></td>
+                <td><span class="badge sev-medium">MEDIUM</span></td>
+                <td>pkg:npm/jquery@3.4.1</td>
+                <td>passing HTML containing <option> elements from untrusted sources - even after sanitizing it - to one of jQuery's DOM man</td>
+            </tr>
+            <tr class="vuln-medium">
+                <td><a href="https://blog.jquery.com/2020/04/10/jquery-3-5-0-released/" target="_blank">CVE-2020-11022</a></td>
+                <td><span class="badge sev-medium">MEDIUM</span></td>
+                <td>pkg:npm/jquery@3.4.1</td>
+                <td>Regex in its jQuery.htmlPrefilter sometimes may introduce XSS</td>
+            </tr></tbody></table></div>
+
+        <div class="section">
+            <h2>📦 Dependencies (14)</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Version</th>
+                        <th>Ecosystem</th>
+                        <th>Confidence</th>
+                        <th>Sources</th>
+                        <th>PURL</th>
+                    </tr>
+                </thead>
+                <tbody>
+            <tr>
+                <td>axios</td>
+                <td>1.6.7</td>
+                <td><span class="badge eco-cdn">cdn</span></td>
+                <td><span class="conf conf-high">85%</span></td>
+                <td class="sources">cdn-url, sourcemap</td>
+                <td class="purl">pkg:generic/axios@1.6.7</td>
+            </tr>
+            <tr>
+                <td>bootstrap</td>
+                <td>5.3.2</td>
+                <td><span class="badge eco-cdn">cdn</span></td>
+                <td><span class="conf conf-high">85%</span></td>
+                <td class="sources">cdn-url</td>
+                <td class="purl">pkg:generic/bootstrap@5.3.2</td>
+            </tr>
+            <tr>
+                <td>chart.js</td>
+                <td>4.4.1</td>
+                <td><span class="badge eco-cdn">cdn</span></td>
+                <td><span class="conf conf-high">85%</span></td>
+                <td class="sources">cdn-url</td>
+                <td class="purl">pkg:generic/chart.js@4.4.1</td>
+            </tr>
+            <tr>
+                <td>datatables</td>
+                <td>1.10.21</td>
+                <td><span class="badge eco-cdn">cdn</span></td>
+                <td><span class="conf conf-high">85%</span></td>
+                <td class="sources">cdn-url</td>
+                <td class="purl">pkg:generic/datatables@1.10.21</td>
+            </tr>
+            <tr>
+                <td>font-awesome</td>
+                <td>6.5.1</td>
+                <td><span class="badge eco-cdn">cdn</span></td>
+                <td><span class="conf conf-high">85%</span></td>
+                <td class="sources">cdn-url</td>
+                <td class="purl">pkg:generic/font-awesome@6.5.1</td>
+            </tr>
+            <tr>
+                <td>jquery</td>
+                <td>3.4.1</td>
+                <td><span class="badge eco-cdn">cdn</span></td>
+                <td><span class="conf conf-high">85%</span></td>
+                <td class="sources">cdn-url, fingerprint</td>
+                <td class="purl">pkg:generic/jquery@3.4.1</td>
+            </tr>
+            <tr>
+                <td>lodash</td>
+                <td>4.17.21</td>
+                <td><span class="badge eco-cdn">cdn</span></td>
+                <td><span class="conf conf-high">85%</span></td>
+                <td class="sources">cdn-url, sourcemap</td>
+                <td class="purl">pkg:generic/lodash@4.17.21</td>
+            </tr>
+            <tr>
+                <td>moment</td>
+                <td>2.29.1</td>
+                <td><span class="badge eco-cdn">cdn</span></td>
+                <td><span class="conf conf-high">85%</span></td>
+                <td class="sources">cdn-url, fingerprint</td>
+                <td class="purl">pkg:generic/moment@2.29.1</td>
+            </tr>
+            <tr>
+                <td>sweetalert2</td>
+                <td>11.10.5</td>
+                <td><span class="badge eco-cdn">cdn</span></td>
+                <td><span class="conf conf-high">85%</span></td>
+                <td class="sources">cdn-url</td>
+                <td class="purl">pkg:generic/sweetalert2@11.10.5</td>
+            </tr>
+            <tr>
+                <td>@sentry/browser</td>
+                <td><span class="no-ver">unknown</span></td>
+                <td><span class="badge eco-static">static</span></td>
+                <td><span class="conf conf-low">30%</span></td>
+                <td class="sources">sourcemap</td>
+                <td class="purl">—</td>
+            </tr>
+            <tr>
+                <td>dayjs</td>
+                <td><span class="no-ver">unknown</span></td>
+                <td><span class="badge eco-static">static</span></td>
+                <td><span class="conf conf-low">30%</span></td>
+                <td class="sources">sourcemap</td>
+                <td class="purl">—</td>
+            </tr>
+            <tr>
+                <td>socket.io-client</td>
+                <td><span class="no-ver">unknown</span></td>
+                <td><span class="badge eco-static">static</span></td>
+                <td><span class="conf conf-low">30%</span></td>
+                <td class="sources">sourcemap</td>
+                <td class="purl">—</td>
+            </tr>
+            <tr>
+                <td>underscore</td>
+                <td>1.13.6</td>
+                <td><span class="badge eco-static">static</span></td>
+                <td><span class="conf conf-med">75%</span></td>
+                <td class="sources">fingerprint, frontend-html</td>
+                <td class="purl">pkg:npm/underscore@1.13.6</td>
+            </tr>
+            <tr>
+                <td>uuid</td>
+                <td><span class="no-ver">unknown</span></td>
+                <td><span class="badge eco-static">static</span></td>
+                <td><span class="conf conf-low">30%</span></td>
+                <td class="sources">sourcemap</td>
+                <td class="purl">—</td>
+            </tr></tbody>
+            </table>
+        </div>
+
+        <div class="footer">
+            Generated by DepNova v0.1.0 • 2026-04-29 17:53 UTC
+        </div>
+    </div>
+</body>
+</html>

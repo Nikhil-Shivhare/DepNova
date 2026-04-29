@@ -1,5 +1,5 @@
 project:
-  name: "demo-webapp"
+  name: "accops-employee-portal"
   root_path: "./demo-app"
   output_dir: "./demo-app/depnova-reports"
 
@@ -8,24 +8,16 @@ settings:
   fail_on_error: false
 
 pipeline:
-  # Phase 1
-  - plugin: "manifest_scanner"
-    enabled: true
-    config:
-      files: ["requirements.txt", "package.json", "pom.xml"]
-      mark_unpinned: true
-
   # Phase 3A: Frontend CDN detection
   - plugin: "frontend_scanner"
     enabled: true
     config:
-      html_scan_paths: [".", "./public"]
+      html_scan_paths: [".", "./templates", "./public"]
       detect_cdn: true
       scan_static_assets: true
-      static_extensions: [".js", ".css"]
       min_file_size_bytes: 100
 
-  # Phase 3B: JS fingerprinting with RetireJS
+  # Phase 3B: JS fingerprinting
   - plugin: "js_fingerprinter"
     enabled: true
     config:
@@ -34,4 +26,20 @@ pipeline:
       cache_ttl_hours: 24
       scan_sourcemaps: true
       include_vulnerabilities: true
-      min_file_size_bytes: 500
+
+  # Phase 5: Merge & deduplicate
+  - plugin: "dependency_merger"
+    enabled: true
+    config:
+      normalize_names: true
+      merge_cdn_and_npm: true
+      drop_no_version: false
+      prefer_locked: true
+
+  # Phase 6: Generate reports
+  - plugin: "report_generator"
+    enabled: true
+    config:
+      formats: ["cyclonedx-json", "html", "csv"]
+      include_vulnerabilities: true
+      include_metadata: true

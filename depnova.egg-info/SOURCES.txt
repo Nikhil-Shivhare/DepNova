@@ -18,7 +18,10 @@ depnova/plugins/__init__.py
 depnova/plugins/base.py
 depnova/plugins/fingerprinters/__init__.py
 depnova/plugins/fingerprinters/retirejs.py
+depnova/plugins/mergers/__init__.py
+depnova/plugins/mergers/merger.py
 depnova/plugins/reporters/__init__.py
+depnova/plugins/reporters/report.py
 depnova/plugins/scanners/__init__.py
 depnova/plugins/scanners/frontend.py
 depnova/plugins/scanners/lockfile.py

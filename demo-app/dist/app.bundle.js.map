@@ -4,11 +4,14 @@
     "sources": [
         "webpack:///./node_modules/lodash/lodash.js",
         "webpack:///./node_modules/axios/lib/axios.js",
+        "webpack:///./node_modules/socket.io-client/dist/socket.io.esm.min.js",
         "webpack:///./node_modules/@sentry/browser/esm/index.js",
         "webpack:///./node_modules/dayjs/dayjs.min.js",
+        "webpack:///./node_modules/uuid/dist/esm-browser/index.js",
         "webpack:///./src/app.js",
-        "webpack:///./src/utils/helpers.js"
+        "webpack:///./src/components/Dashboard.js",
+        "webpack:///./src/utils/api.js"
     ],
     "names": [],
-    "mappings": ""
+    "mappings": "AAAA;AACA;AACA"
 }

@@ -1,0 +1,454 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-04-29T17:53:41.967130+00:00",
+    "tools": [
+      {
+        "vendor": "DepNova",
+        "name": "depnova",
+        "version": "0.1.0"
+      }
+    ],
+    "component": {
+      "type": "application",
+      "name": "accops-employee-portal"
+    }
+  },
+  "components": [
+    {
+      "type": "library",
+      "name": "jquery",
+      "version": "3.4.1",
+      "purl": "pkg:generic/jquery@3.4.1",
+      "properties": [
+        {
+          "name": "depnova:ecosystem",
+          "value": "cdn"
+        },
+        {
+          "name": "depnova:confidence",
+          "value": "0.85"
+        },
+        {
+          "name": "depnova:sources",
+          "value": "cdn-url,fingerprint"
+        },
+        {
+          "name": "depnova:is_direct",
+          "value": "true"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "bootstrap",
+      "version": "5.3.2",
+      "purl": "pkg:generic/bootstrap@5.3.2",
+      "properties": [
+        {
+          "name": "depnova:ecosystem",
+          "value": "cdn"
+        },
+        {
+          "name": "depnova:confidence",
+          "value": "0.85"
+        },
+        {
+          "name": "depnova:sources",
+          "value": "cdn-url"
+        },
+        {
+          "name": "depnova:is_direct",
+          "value": "true"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "moment",
+      "version": "2.29.1",
+      "purl": "pkg:generic/moment@2.29.1",
+      "properties": [
+        {
+          "name": "depnova:ecosystem",
+          "value": "cdn"
+        },
+        {
+          "name": "depnova:confidence",
+          "value": "0.85"
+        },
+        {
+          "name": "depnova:sources",
+          "value": "cdn-url,fingerprint"
+        },
+        {
+          "name": "depnova:is_direct",
+          "value": "true"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "chart.js",
+      "version": "4.4.1",
+      "purl": "pkg:generic/chart.js@4.4.1",
+      "properties": [
+        {
+          "name": "depnova:ecosystem",
+          "value": "cdn"
+        },
+        {
+          "name": "depnova:confidence",
+          "value": "0.85"
+        },
+        {
+          "name": "depnova:sources",
+          "value": "cdn-url"
+        },
+        {
+          "name": "depnova:is_direct",
+          "value": "true"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "datatables",
+      "version": "1.10.21",
+      "purl": "pkg:generic/datatables@1.10.21",
+      "properties": [
+        {
+          "name": "depnova:ecosystem",
+          "value": "cdn"
+        },
+        {
+          "name": "depnova:confidence",
+          "value": "0.85"
+        },
+        {
+          "name": "depnova:sources",
+          "value": "cdn-url"
+        },
+        {
+          "name": "depnova:is_direct",
+          "value": "true"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "lodash",
+      "version": "4.17.21",
+      "purl": "pkg:generic/lodash@4.17.21",
+      "properties": [
+        {
+          "name": "depnova:ecosystem",
+          "value": "cdn"
+        },
+        {
+          "name": "depnova:confidence",
+          "value": "0.85"
+        },
+        {
+          "name": "depnova:sources",
+          "value": "cdn-url,sourcemap"
+        },
+        {
+          "name": "depnova:is_direct",
+          "value": "true"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "sweetalert2",
+      "version": "11.10.5",
+      "purl": "pkg:generic/sweetalert2@11.10.5",
+      "properties": [
+        {
+          "name": "depnova:ecosystem",
+          "value": "cdn"
+        },
+        {
+          "name": "depnova:confidence",
+          "value": "0.85"
+        },
+        {
+          "name": "depnova:sources",
+          "value": "cdn-url"
+        },
+        {
+          "name": "depnova:is_direct",
+          "value": "true"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "font-awesome",
+      "version": "6.5.1",
+      "purl": "pkg:generic/font-awesome@6.5.1",
+      "properties": [
+        {
+          "name": "depnova:ecosystem",
+          "value": "cdn"
+        },
+        {
+          "name": "depnova:confidence",
+          "value": "0.85"
+        },
+        {
+          "name": "depnova:sources",
+          "value": "cdn-url"
+        },
+        {
+          "name": "depnova:is_direct",
+          "value": "true"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "axios",
+      "version": "1.6.7",
+      "purl": "pkg:generic/axios@1.6.7",
+      "properties": [
+        {
+          "name": "depnova:ecosystem",
+          "value": "cdn"
+        },
+        {
+          "name": "depnova:confidence",
+          "value": "0.85"
+        },
+        {
+          "name": "depnova:sources",
+          "value": "cdn-url,sourcemap"
+        },
+        {
+          "name": "depnova:is_direct",
+          "value": "true"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "underscore",
+      "version": "1.13.6",
+      "purl": "pkg:npm/underscore@1.13.6",
+      "properties": [
+        {
+          "name": "depnova:ecosystem",
+          "value": "static"
+        },
+        {
+          "name": "depnova:confidence",
+          "value": "0.75"
+        },
+        {
+          "name": "depnova:sources",
+          "value": "fingerprint,frontend-html"
+        },
+        {
+          "name": "depnova:is_direct",
+          "value": "true"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "socket.io-client",
+      "version": "",
+      "properties": [
+        {
+          "name": "depnova:ecosystem",
+          "value": "static"
+        },
+        {
+          "name": "depnova:confidence",
+          "value": "0.3"
+        },
+        {
+          "name": "depnova:sources",
+          "value": "sourcemap"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "@sentry/browser",
+      "version": "",
+      "properties": [
+        {
+          "name": "depnova:ecosystem",
+          "value": "static"
+        },
+        {
+          "name": "depnova:confidence",
+          "value": "0.3"
+        },
+        {
+          "name": "depnova:sources",
+          "value": "sourcemap"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "dayjs",
+      "version": "",
+      "properties": [
+        {
+          "name": "depnova:ecosystem",
+          "value": "static"
+        },
+        {
+          "name": "depnova:confidence",
+          "value": "0.3"
+        },
+        {
+          "name": "depnova:sources",
+          "value": "sourcemap"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "uuid",
+      "version": "",
+      "properties": [
+        {
+          "name": "depnova:ecosystem",
+          "value": "static"
+        },
+        {
+          "name": "depnova:confidence",
+          "value": "0.3"
+        },
+        {
+          "name": "depnova:sources",
+          "value": "sourcemap"
+        }
+      ]
+    }
+  ],
+  "vulnerabilities": [
+    {
+      "id": "CVE-2020-11023",
+      "source": {
+        "name": "retirejs"
+      },
+      "ratings": [
+        {
+          "severity": "medium",
+          "score": 0.0
+        }
+      ],
+      "description": "passing HTML containing <option> elements from untrusted sources - even after sanitizing it - to one of jQuery's DOM manipulation methods (i.e. .html(), .append(), and others) may execute untrusted co",
+      "advisories": [
+        {
+          "url": "https://blog.jquery.com/2020/04/10/jquery-3-5-0-released/"
+        }
+      ],
+      "affects": [
+        {
+          "ref": "pkg:npm/jquery@3.4.1"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2020-11022",
+      "source": {
+        "name": "retirejs"
+      },
+      "ratings": [
+        {
+          "severity": "medium",
+          "score": 0.0
+        }
+      ],
+      "description": "Regex in its jQuery.htmlPrefilter sometimes may introduce XSS",
+      "advisories": [
+        {
+          "url": "https://blog.jquery.com/2020/04/10/jquery-3-5-0-released/"
+        }
+      ],
+      "affects": [
+        {
+          "ref": "pkg:npm/jquery@3.4.1"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2022-24785",
+      "source": {
+        "name": "retirejs"
+      },
+      "ratings": [
+        {
+          "severity": "high",
+          "score": 0.0
+        }
+      ],
+      "description": "This vulnerability impacts npm (server) users of moment.js, especially if user provided locale string, eg fr is directly used to switch moment locale.",
+      "advisories": [
+        {
+          "url": "https://github.com/moment/moment/security/advisories/GHSA-8hfj-j24r-96c4"
+        }
+      ],
+      "affects": [
+        {
+          "ref": "pkg:npm/moment@2.29.1"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2022-31129",
+      "source": {
+        "name": "retirejs"
+      },
+      "ratings": [
+        {
+          "severity": "high",
+          "score": 0.0
+        }
+      ],
+      "description": "Regular Expression Denial of Service (ReDoS), Affecting moment package, versions >=2.18.0 <2.29.4",
+      "advisories": [
+        {
+          "url": "https://github.com/moment/moment/security/advisories/GHSA-wc69-rhjr-hc9g"
+        }
+      ],
+      "affects": [
+        {
+          "ref": "pkg:npm/moment@2.29.1"
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-27601",
+      "source": {
+        "name": "retirejs"
+      },
+      "ratings": [
+        {
+          "severity": "high",
+          "score": 0.0
+        }
+      ],
+      "description": "### Impact\n\nIn simple words, some programs that use `_.flatten` or `_.isEqual` could be made to crash. Someone who wants to do harm may be able to do this on purpose. This can only be done if the prog",
+      "advisories": [
+        {
+          "url": "https://github.com/jashkenas/underscore/security/advisories/GHSA-qpx9-hpmf-5gmw"
+        }
+      ],
+      "affects": [
+        {
+          "ref": "pkg:npm/underscore@1.13.6"
+        }
+      ]
+    }
+  ]
+}

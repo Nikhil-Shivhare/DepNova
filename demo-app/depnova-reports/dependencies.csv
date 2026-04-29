@@ -1,0 +1,15 @@
+Name,Version,Ecosystem,PURL,Confidence,Sources,Direct,Dev,License,Location
+axios,1.6.7,cdn,pkg:generic/axios@1.6.7,85%,cdn-url | sourcemap,Yes,No,,/home/shivhare/accops/DependencyTracker/DepNova/demo-app/templates/login.html
+bootstrap,5.3.2,cdn,pkg:generic/bootstrap@5.3.2,85%,cdn-url,Yes,No,,/home/shivhare/accops/DependencyTracker/DepNova/demo-app/templates/index.html
+chart.js,4.4.1,cdn,pkg:generic/chart.js@4.4.1,85%,cdn-url,Yes,No,,/home/shivhare/accops/DependencyTracker/DepNova/demo-app/templates/index.html
+datatables,1.10.21,cdn,pkg:generic/datatables@1.10.21,85%,cdn-url,Yes,No,,/home/shivhare/accops/DependencyTracker/DepNova/demo-app/templates/index.html
+font-awesome,6.5.1,cdn,pkg:generic/font-awesome@6.5.1,85%,cdn-url,Yes,No,,/home/shivhare/accops/DependencyTracker/DepNova/demo-app/templates/index.html
+jquery,3.4.1,cdn,pkg:generic/jquery@3.4.1,85%,cdn-url | fingerprint,Yes,No,,/home/shivhare/accops/DependencyTracker/DepNova/demo-app/templates/index.html
+lodash,4.17.21,cdn,pkg:generic/lodash@4.17.21,85%,cdn-url | sourcemap,Yes,No,,/home/shivhare/accops/DependencyTracker/DepNova/demo-app/templates/index.html
+moment,2.29.1,cdn,pkg:generic/moment@2.29.1,85%,cdn-url | fingerprint,Yes,No,,/home/shivhare/accops/DependencyTracker/DepNova/demo-app/templates/index.html
+sweetalert2,11.10.5,cdn,pkg:generic/sweetalert2@11.10.5,85%,cdn-url,Yes,No,,/home/shivhare/accops/DependencyTracker/DepNova/demo-app/templates/index.html
+@sentry/browser,,static,,30%,sourcemap,No,No,,/home/shivhare/accops/DependencyTracker/DepNova/demo-app/dist/app.bundle.js.map
+dayjs,,static,,30%,sourcemap,No,No,,/home/shivhare/accops/DependencyTracker/DepNova/demo-app/dist/app.bundle.js.map
+socket.io-client,,static,,30%,sourcemap,No,No,,/home/shivhare/accops/DependencyTracker/DepNova/demo-app/dist/app.bundle.js.map
+underscore,1.13.6,static,pkg:npm/underscore@1.13.6,75%,fingerprint | frontend-html,Yes,No,,/home/shivhare/accops/DependencyTracker/DepNova/demo-app/public/assets/js/underscore-1.13.6.min.js
+uuid,,static,,30%,sourcemap,No,No,,/home/shivhare/accops/DependencyTracker/DepNova/demo-app/dist/app.bundle.js.map
