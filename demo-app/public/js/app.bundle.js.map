@@ -1,0 +1,14 @@
+{
+    "version": 3,
+    "file": "app.bundle.js",
+    "sources": [
+        "webpack:///./node_modules/lodash/lodash.js",
+        "webpack:///./node_modules/axios/lib/axios.js",
+        "webpack:///./node_modules/@sentry/browser/esm/index.js",
+        "webpack:///./node_modules/dayjs/dayjs.min.js",
+        "webpack:///./src/app.js",
+        "webpack:///./src/utils/helpers.js"
+    ],
+    "names": [],
+    "mappings": ""
+}

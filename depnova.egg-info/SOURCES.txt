@@ -17,8 +17,14 @@ depnova/core/purl.py
 depnova/plugins/__init__.py
 depnova/plugins/base.py
 depnova/plugins/fingerprinters/__init__.py
+depnova/plugins/fingerprinters/retirejs.py
 depnova/plugins/reporters/__init__.py
 depnova/plugins/scanners/__init__.py
+depnova/plugins/scanners/frontend.py
+depnova/plugins/scanners/lockfile.py
+depnova/plugins/scanners/manifest.py
+depnova/plugins/scanners/os_packages.py
+depnova/plugins/scanners/syft.py
 depnova/plugins/validators/__init__.py
 depnova/utils/__init__.py
 depnova/utils/logger.py

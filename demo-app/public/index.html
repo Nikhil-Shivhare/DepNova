@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo Web App</title>
+
+    <!-- CDN: Bootstrap CSS from jsDelivr -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CDN: Font Awesome from cdnjs -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div id="app"></div>
+
+    <!-- CDN: jQuery from cdnjs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- CDN: React from unpkg -->
+    <script src="https://unpkg.com/react@18.2.0/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18.2.0/umd/react-dom.production.min.js"></script>
+
+    <!-- CDN: Bootstrap JS from jsDelivr -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- CDN: Moment.js from cdnjs (known vulnerable!) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+
+    <!-- CDN: Lodash from Google CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/lodash/4.17.21/lodash.min.js"></script>
+
+    <!-- CDN: Vue.js from jsDelivr (no @ version, uses path) -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@3.3.4/dist/vue.global.min.js"></script>
+
+    <!-- CDN: D3.js from cdnjs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+
+    <!-- Local static JS files (will be fingerprinted in Phase 3B) -->
+    <script src="/static/js/app.bundle.js"></script>
+    <script src="./vendor/underscore-1.13.6.min.js"></script>
+
+    <!-- Inline script (should be skipped) -->
+    <script>
+        console.log("Hello from inline script");
+    </script>
+</body>
+</html>

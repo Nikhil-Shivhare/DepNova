@@ -1,1 +1,2 @@
 depnova
+depnova-reports

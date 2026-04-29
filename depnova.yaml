@@ -1,4 +1,3 @@
-# DepNova config — scanning our demo multi-language app
 project:
   name: "demo-webapp"
   root_path: "./demo-app"
@@ -9,24 +8,30 @@ settings:
   fail_on_error: false
 
 pipeline:
-  # Phase 1: Find all declared dependencies
-  - plugin: "lockfile_scanner"
-    enabled: true
-    config:
-      ecosystems:
-        npm: true
-        poetry: true
-        pipenv: true
-
+  # Phase 1
   - plugin: "manifest_scanner"
     enabled: true
     config:
       files: ["requirements.txt", "package.json", "pom.xml"]
       mark_unpinned: true
 
-  # Phase 2: Scan OS packages on this machine
-  - plugin: "os_package_scanner"
+  # Phase 3A: Frontend CDN detection
+  - plugin: "frontend_scanner"
     enabled: true
     config:
-      auto_detect: true
-      package_managers: ["dpkg"]
+      html_scan_paths: [".", "./public"]
+      detect_cdn: true
+      scan_static_assets: true
+      static_extensions: [".js", ".css"]
+      min_file_size_bytes: 100
+
+  # Phase 3B: JS fingerprinting with RetireJS
+  - plugin: "js_fingerprinter"
+    enabled: true
+    config:
+      use_retirejs_db: true
+      cache_dir: "~/.depnova/cache"
+      cache_ttl_hours: 24
+      scan_sourcemaps: true
+      include_vulnerabilities: true
+      min_file_size_bytes: 500
